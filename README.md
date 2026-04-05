@@ -24,14 +24,14 @@ The **Strawberry_12 Dataset** is a large-scale image dataset designed for strawb
 # Citation
 
 ```
-@article{StrawDet-YOLO,
-  title={StrawDet-YOLO: A Deep Learning Framework for Strawberry Detection and Quality Assessment},
-  author={Ethan-ai637 and Others},
-  journal={Journal of Agriculture},
-  year={2026},
-  volume={29},
-  number={2},
-  pages={123-134},
-  doi={10.1234/jagri.2026.0029}
-}
+@INPROCEEDINGS{11343179,
+  author={Hu, Yue and Jiang, Xiankun and Guan, Jianfeng},
+  booktitle={2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)}, 
+  title={StrawDet-YOLO: A Real-Time and High Precision Object Detection for Strawberry}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={6791-6797},
+  keywords={Location awareness;Smart agriculture;Accuracy;Spraying;Object detection;Nutrients;Real-time systems;Stability analysis;Monitoring;Diseases},
+  doi={10.1109/SMC58881.2025.11343179}}
 ```
