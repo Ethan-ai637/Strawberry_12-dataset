@@ -21,6 +21,20 @@ The **Strawberry_12 Dataset** is a large-scale image dataset designed for strawb
 
 ---
 
+## 🚀 Model Weights
+
+We are open-sourcing the pretrained model weights for **StrawDet-YOLO**, the real-time strawberry object detector presented in our paper, to support reproducibility and downstream deployment.
+
+| Model | Format | Model Weights |
+| --- | --- | --- |
+| **StrawDet-YOLO** | ONNX | [`weights/`](./weights/) |
+
+> 📦 The `weights/` directory is reserved for the ONNX checkpoint. The model file will be uploaded shortly.
+
+After the ONNX file is uploaded, it can be downloaded directly from the [`weights/`](./weights/) directory.
+
+---
+
 # Citation
 
 ```
