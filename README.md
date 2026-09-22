@@ -4,10 +4,10 @@
 
 **StrawDet-YOLO** is a lightweight object detection model designed for fine-grained recognition of strawberry diseases, pests, and nutrient deficiencies under real-world agricultural conditions.
 
-This repository provides the open resources associated with our paper **“StrawDet-YOLO: A Real-Time and High Precision Object Detection for Strawberry”**, published at the **2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)**, including the pretrained **ONNX model weights** and the **Strawberry-12 benchmark dataset**.
+This repository provides the open resources associated with our paper **“StrawDet-YOLO: A Real-Time and High Precision Object Detection for Strawberry”**, published at the **2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)**, including the pretrained **PyTorch and ONNX model weights** and the **Strawberry-12 benchmark dataset**.
 
 > **Paper:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11343179/) · [DOI: 10.1109/SMC58881.2025.11343179](https://doi.org/10.1109/SMC58881.2025.11343179)  
-> **Model:** [StrawDet-YOLO.onnx](./weights/StrawDet-YOLO.onnx)  
+> **Model Weights:** [PyTorch (.pt)](./weights/StrawDet-YOLO.pt) · [ONNX (.onnx)](./weights/StrawDet-YOLO.onnx)  
 > **Dataset:** [Strawberry-12 on Hugging Face](https://huggingface.co/datasets/Ethan0300/Strawberry_12-dataset)
 
 ---
@@ -28,19 +28,25 @@ In the experiments reported in the paper, StrawDet-YOLO achieves a **7.7% precis
 
 ## 🚀 Model Weights
 
-The pretrained **StrawDet-YOLO** model is now publicly available in **ONNX** format for reproducibility, inference, and downstream deployment.
+The pretrained **StrawDet-YOLO** model weights are publicly available in both **PyTorch (.pt)** and **ONNX (.onnx)** formats to support academic research, reproducibility, inference, and downstream deployment.
 
 | Model | Format | Status | Download |
 | --- | --- | --- | --- |
-| **StrawDet-YOLO** | ONNX | ✅ Available | [**StrawDet-YOLO.onnx**](./weights/StrawDet-YOLO.onnx) |
+| **StrawDet-YOLO** | PyTorch (.pt) | ✅ Available | [**StrawDet-YOLO.pt**](./weights/StrawDet-YOLO.pt) |
+| **StrawDet-YOLO** | ONNX (.onnx) | ✅ Available | [**StrawDet-YOLO.onnx**](./weights/StrawDet-YOLO.onnx) |
 
-The model file is located at:
+The released files are located at:
 
 ```text
-weights/StrawDet-YOLO.onnx
+weights/
+├── StrawDet-YOLO.pt
+└── StrawDet-YOLO.onnx
 ```
 
-> The released ONNX checkpoint is intended to make it easier to reproduce and deploy StrawDet-YOLO across different inference environments.
+- **PyTorch checkpoint (.pt):** provided for researchers who prefer to work with the model in a PyTorch-based workflow.
+- **ONNX model (.onnx):** provided for portable inference and deployment across different runtime environments.
+
+> **Release scope:** This repository currently releases the pretrained model weights. The complete training source code and implementation files are not included in this release.
 
 ---
 
@@ -69,6 +75,7 @@ Field data were collected across three growing seasons and cover four major stra
 Strawberry_12-dataset/
 ├── weights/
 │   ├── README.md
+│   ├── StrawDet-YOLO.pt
 │   └── StrawDet-YOLO.onnx
 ├── LICENSE
 └── README.md
