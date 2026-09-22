@@ -6,13 +6,22 @@ This directory contains the released pretrained model weights for **StrawDet-YOL
 > Yue Hu, Xiankun Jiang, Jianfeng Guan  
 > 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)
 
-## Available Checkpoint
+## Available Checkpoints
 
 | Model | Format | File |
 | --- | --- | --- |
-| **StrawDet-YOLO** | ONNX | [`StrawDet-YOLO.onnx`](./StrawDet-YOLO.onnx) |
+| **StrawDet-YOLO** | PyTorch (.pt) | [`StrawDet-YOLO.pt`](./StrawDet-YOLO.pt) |
+| **StrawDet-YOLO** | ONNX (.onnx) | [`StrawDet-YOLO.onnx`](./StrawDet-YOLO.onnx) |
 
-The ONNX checkpoint is provided to support reproducibility, inference, and deployment across different runtime environments.
+### PyTorch Checkpoint
+
+The `.pt` checkpoint is provided for researchers who prefer to use the pretrained StrawDet-YOLO model in a PyTorch-based workflow.
+
+### ONNX Model
+
+The `.onnx` model is provided for portable inference and deployment across different runtime environments.
+
+> **Release scope:** This repository currently releases the pretrained model weights only. The complete training source code and implementation files are not included in this release.
 
 ## Paper
 
